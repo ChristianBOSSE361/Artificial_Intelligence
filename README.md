@@ -8,6 +8,7 @@ For each project, you will generally find:
   - 📝 A short description of the project and its objectives.
 
 Let's see it in details.
+
 ---
 For 📊 Machine Learning projects, we have:
   - **Iris Classification**:
