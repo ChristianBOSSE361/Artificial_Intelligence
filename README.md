@@ -3,9 +3,9 @@
 This repository contains all my personal projects related to Artificial Intelligence, including both Machine Learning and Deep Learning.
 
 For each project, you will generally find:
--📅 The project’s start and completion dates;
--📂 The dataset(s) used;
--📝 A short description of the project and its objectives.
+  -📅 The project’s start and completion dates;
+  -📂 The dataset(s) used;
+  -📝 A short description of the project and its objectives.
 
 Let's see it in details.
 
