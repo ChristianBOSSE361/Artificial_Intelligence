@@ -4,7 +4,9 @@ This repository contains all my personal projects related to Artificial Intellig
 
 For each project, you will generally find:
 -📅 The project’s start and completion dates;
+
 -📂 The dataset(s) used;
+
 -📝 A short description of the project and its objectives.
 
 Let's see it in details.
