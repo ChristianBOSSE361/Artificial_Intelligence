@@ -17,7 +17,7 @@ For 📊 Machine Learning projects, we have:
   - **Sentiment or feelings Detection**: Detect sentiment in text (positive or negative).
   - **Customer Classsification**: Group customers into categories for business insights.
 
---
+---
 For 🤖 Deep learning projects, we have:
   - **Image classification**: Build CNN models to classify images into categories.
   - **Image Denoising**: Remove noise from images using autoencoders.
@@ -30,8 +30,7 @@ For 🤖 Deep learning projects, we have:
 - ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 **Machine Learning & Deep Learning:**  
-- ![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-- ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) 
+- ![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white) 
 - ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 
 **Data Processing & Visualization:**  
