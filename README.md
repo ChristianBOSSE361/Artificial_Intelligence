@@ -10,7 +10,8 @@ For each project, you will generally find:
 Let's see it in details.
 
 ---
-For 📊 Machine Learning projects, we have:
+## 📊 Machine Learning
+For Machine Learning projects, we have:
   - **Iris Classification**: Classify iris flowers based on petal and sepal measurements.
   - **House Price Detection**: Predict real-estate prices using regression models.
   - **Spam Detection**: Classify emails/messages as spam or not spam.
@@ -18,7 +19,8 @@ For 📊 Machine Learning projects, we have:
   - **Customer Classsification**: Group customers into categories for business insights.
 
 ---
-For 🤖 Deep learning projects, we have:
+## 🤖 Deep learning
+For Deep learning projects, we have:
   - **Image classification**: Build CNN models to classify images into categories.
   - **Image Denoising**: Remove noise from images using autoencoders.
   - **Text Generation**: Generate text using RNNs/LSTMs or Transformers. (not finish)
