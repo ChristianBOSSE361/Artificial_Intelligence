@@ -23,7 +23,7 @@ For Machine Learning projects, we have:
 For Deep learning projects, we have:
   - **Image classification**: Build CNN models to classify images into categories.
   - **Image Denoising**: Remove noise from images using autoencoders.
-  - **Text Generation**: Generate text using RNNs/LSTMs or Transformers. (not finish)
+  - **Text Generation**: Generate text using RNNs/LSTMs or Transformers. (not finished)
 
 ---
 ## 🛠️ Tech Stack  
