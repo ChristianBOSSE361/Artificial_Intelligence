@@ -16,6 +16,7 @@ import re
 from sentence_transformers import SentenceTransformer
 import numpy as np
 import faiss
+import json
 from huggingface_hub import InferenceClient
 from dotenv import load_dotenv #because I work in a virtual environement
 
@@ -109,14 +110,15 @@ def create_embeddings_and_store(chunks):
     return model, index
 
 
-def text_generation(model, chunks, index, query="What is Machine learning?"):
+def text_generation(query="What is Machine learning?", top_k=3):
     """
     We generate the anwswers using a GPT.
     """
-    # we search first the chunks: but not usefull now
-    # index = faiss.read_index("index.faiss")
-    # with open("chunks.json", "r", encoding="utf-8") as f:
-    #     chunks = json.load(f)
+    # we search first the data
+    model=SentenceTransformer("all-MiniLM-L6-v2")
+    index = faiss.read_index("./data/index.faiss")
+    with open("./data/chunks.json", "r", encoding="utf-8") as f:
+        chunks = json.load(f)
 
     #Get the query
     query_embedding=model.encode(query)
@@ -124,7 +126,7 @@ def text_generation(model, chunks, index, query="What is Machine learning?"):
     query_embedding=query_embedding/np.linalg.norm(query_embedding, axis=1, keepdims=True)
 
     #Gather all the good chunks
-    D,I=index.search(query_embedding,k=3) #Here D correspond to a matrix of distance and I a matrix of index
+    D,I=index.search(query_embedding,k=top_k) #Here D correspond to a matrix of distance and I a matrix of index
     context = "\n\n".join(chunks[i] for i in I[0])
 
     prompt=f"""
@@ -133,7 +135,7 @@ def text_generation(model, chunks, index, query="What is Machine learning?"):
     Text to focus on:{context}
 
     Question:{query}
-    Answer(simple, precise with examples if possible):
+    Answer(simple, not too long, precise and with examples if possible):
     """
     ##generate the answer
     #loading environment variable
@@ -152,6 +154,6 @@ def text_generation(model, chunks, index, query="What is Machine learning?"):
             }
         ],
     )
-    print(completion.choices[0].message.content)
+    #print(completion.choices[0].message.content)
 
-    return completion.choices[0].message
+    return completion.choices[0].message.content

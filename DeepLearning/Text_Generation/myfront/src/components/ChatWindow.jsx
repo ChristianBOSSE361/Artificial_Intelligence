@@ -25,13 +25,25 @@ export default function ChatWindow() {
     }
   }
 
-  return (
+return (
     <div className="chat-window">
       <div className="messages">
-        {messages.map((m,i)=><Message key={i} msg={m} />)}
+        {messages.map((m, i) => (
+          <Message key={i} msg={m} />
+        ))}
         <div ref={endRef} />
       </div>
       <Composer onSend={handleSend} disabled={loading} />
     </div>
   );
 }
+
+// export default function ChatWindow() {
+//   const [messages, setMessages] = useState([]);
+//   return (
+//     <div className="chat-window">
+//       <div className="messages">
+//       </div>
+//     </div>
+//   );
+// }
