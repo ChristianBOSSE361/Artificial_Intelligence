@@ -1,0 +1,7 @@
+Information:
+
+Don't need to save a model in that projet, because I did not fine-tuned a model,
+all models used were models on the modul SentenceTransformer (SentenceTransformer("all-MiniLM-L6-v2") for Information retrieval)
+and from Hugging Face ("meta-llama/Llama-3.2-1B-Instruct" for text generation).
+
+Thank you.
