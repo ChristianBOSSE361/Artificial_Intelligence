@@ -4,7 +4,7 @@ export default function Composer({ onSend, disabled }) {
   const [query, setQuery] = useState("");
 
   const handleChange = (e) => {
-    setQuery(e.target.value); // ❌ corrige, il faut récupérer e.target.value
+    setQuery(e.target.value);
   };
 
   const handleSend = () => {
@@ -17,7 +17,7 @@ export default function Composer({ onSend, disabled }) {
     <div className="composer">
       <textarea
         value={query}
-        onChange={handleChange} // ❌ syntaxe correcte : onChange (pas onchange)
+        onChange={handleChange} 
         placeholder="How can I help you today?"
         disabled={disabled}
       />

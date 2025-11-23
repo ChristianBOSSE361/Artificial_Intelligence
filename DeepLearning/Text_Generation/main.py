@@ -9,7 +9,7 @@ print("Application intancied properly")
 
 app.add_middleware(
   CORSMiddleware, #usefull to allow to front end to have acces to the data  
-  allow_origins=["http://localhost:5173/"],
+  allow_origins=["http://localhost:5173"],
   allow_credentials=True,
   allow_methods=["*"],
   allow_headers=["*"],

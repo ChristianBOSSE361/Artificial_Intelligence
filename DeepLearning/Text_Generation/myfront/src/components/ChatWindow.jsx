@@ -15,7 +15,7 @@ export default function ChatWindow() {
     setLoading(true);
     try {
       const res = await sendQuestion(text);
-      const botMsg = { role: "bot", text: res.answer, sources: res.sources || [] };
+      const botMsg = { role: "bot", text: res.content, sources: res.sources || [] };
       setMessages(m => [...m, botMsg]);
     } catch (e) {
       setMessages(m => [...m, { role: "bot", text: `Erreur: ${e.message}` }]);

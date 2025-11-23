@@ -154,6 +154,6 @@ def text_generation(query="What is Machine learning?", top_k=3):
             }
         ],
     )
-    #print(completion.choices[0].message.content)
+    #print(completion.choices[0])
 
-    return completion.choices[0].message.content
+    return completion.choices[0].message
