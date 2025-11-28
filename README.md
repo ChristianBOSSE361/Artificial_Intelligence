@@ -23,7 +23,7 @@ For Machine Learning projects, we have:
 For Deep learning projects, we have:
   - **Image classification**: Build CNN models to classify images into categories.
   - **Image Denoising**: Remove noise from images using autoencoders.
-  - **Text Generation (ChatBot)**: Generate model able to answer questions about a document. Then builds an interface for a better communication --description to change
+  - **Text Generation (ChatBot)**: Generate a model able to answer questions about a document using RAG. Then builds an interface for a better communication.
 
 ---
 ## 🛠️ Tech Stack  
@@ -40,6 +40,7 @@ For Deep learning projects, we have:
 - ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 - ![Matplotlib](https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge&logo=plotly&logoColor=blue) 
 - ![NLTK](https://img.shields.io/badge/NLTK-FF6600?style=for-the-badge&logo=nltk&logoColor=white)
+- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
   
 **Environment & Version Control:**  
 - ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white) 
