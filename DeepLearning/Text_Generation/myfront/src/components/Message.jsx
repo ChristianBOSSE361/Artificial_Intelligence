@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Message({ msg }) {
   return (
     <div className={`message ${msg.role}`}>
